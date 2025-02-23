@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>डाउनलोडिंग वेबसाइट</title>
+</head>
+<body>
+    <h2>डाउनलोडर</h2>
+    <input type="text" id="url" placeholder="फाइल URL डालें">
+    <button onclick="startDownload()">डाउनलोड करें</button>
+
+    <script>
+        function startDownload() {
+            var url = document.getElementById("url").value;
+            window.location.href = "https://your-railway-app-url.com/download?url=" + encodeURIComponent(url);
+        }
+    </script>
+</body>
+</html>
